@@ -1,0 +1,261 @@
+html {
+    min-height: 100vh;
+    background-image: url('assets/images/background.png');
+}
+
+.wrapper {
+    margin: 0;
+}
+
+.page-title {
+    text-align: center;
+    font-weight: normal;
+    font-size: 6em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.game-start {
+    visibility: visible;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a0e5e;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    width: 170px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 2px;
+    transition: 0.3s ease-in-out ;
+}
+
+.game-start.hide {
+    visibility: hidden;
+}
+
+.game-start:hover {
+    transform: scale(1.05);
+}
+
+.game-info-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-info {
+    font-size: 2em;
+    color: white;
+}
+.game-container {
+    transition: 0.3s ease-in-out;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    justify-content: center;
+    perspective: 500px;
+}
+
+/* card styles */
+.card {
+    position: relative;
+    cursor: pointer;
+    height: 150px;
+    width: 100px;;
+}
+
+.card-face {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: rgb(53, 70, 182);
+    transition: transform 500ms ease-in-out;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+
+.card.visible .card-back {
+    transform: rotateY(-180deg);
+}
+
+.card.visible .card-front {
+    transform: rotateY(0);
+}
+
+
+.card-back {
+    background-color: rgb(33, 38, 52);
+    transform: rotateY(0);
+}
+
+/* Back Card Styles */
+.center-box {
+    border: 2px solid rgb(53, 70, 182);
+    width: 20%;
+    height: 13%;
+    transform: rotate(-45deg);
+}
+
+.back-box {
+    position: absolute;
+    transition: width 100m ease-in-out, height 100ms ease-in-out;
+}
+
+.card-face:hover .center-box {
+    width: 23%;
+    height: 15%;
+}
+
+.top-left-box {
+    border: 2px solid rgb(53, 70, 182);
+    width: 4%;
+    height: 3%;
+    top: 0;
+    left: 0;
+}
+
+.top-right-box {
+    border: 2px solid rgb(53, 70, 182);
+    width: 4%;
+    height: 3%;
+    top: 0;
+    right: 0;
+}
+
+.bottom-left-box {
+    border: 2px solid rgb(53, 70, 182);
+    width: 4%;
+    height: 3%;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right-box {
+    border: 2px solid rgb(53, 70, 182);
+    width: 4%;
+    height: 3%;
+    bottom: 0;
+    right: 0;
+}
+
+/* Front card */
+.card-value {
+    position: relative;
+    transition: transform 100ms ease-in-out;
+    transform: scale(0.14);
+}
+
+.card-front:hover .card-value {
+    transform: scale(0.15);
+}
+
+.card-front {
+    transform: rotateY(180deg);
+    background-color: rgb(36, 46, 74);
+}
+
+/* card colors */
+/* red */
+.card.red .card-front {
+    background-color: rgb(66, 18, 18);
+}
+.card.red .center-box {
+    border-color: rgb(182, 53, 53);
+}
+.card.red .top-left-box {
+    border-color: rgb(182, 53, 53);
+}
+.card.red .top-right-box {
+    border-color: rgb(182, 53, 53);
+}
+.card.red .bottom-left-box {
+    border-color: rgb(182, 53, 53);
+}
+.card.red .bottom-right-box {
+    border-color: rgb(182, 53, 53);
+}
+.card.red .card-face {
+    border-color: rgb(182, 53, 53);
+}
+
+/* green */
+.card.green .card-front {
+    background-color: rgb(18, 66, 32);
+}
+.card.green .center-box {
+    border-color: rgb(53, 182, 77);
+}
+.card.green .top-left-box {
+    border-color: rgb(53, 182, 77);
+}
+.card.green .top-right-box {
+    border-color: rgb(53, 182, 77);
+}
+.card.green .bottom-left-box {
+    border-color: rgb(53, 182, 77);
+}
+.card.green .bottom-right-box {
+    border-color: rgb(53, 182, 77);
+}
+.card.green .card-face {
+    border-color: rgb(53, 182, 77);
+}
+
+/* yellow */
+.card.yellow .card-front {
+    background-color: rgb(63, 66, 18);
+}
+.card.yellow .center-box {
+    border-color: rgb(187, 201, 37);
+}
+.card.yellow .top-left-box {
+    border-color: rgb(187, 201, 37);
+}
+.card.yellow .top-right-box {
+    border-color: rgb(187, 201, 37);
+}
+.card.yellow .bottom-left-box {
+    border-color: rgb(187, 201, 37);
+}
+.card.yellow .bottom-right-box {
+    border-color: rgb(187, 201, 37);
+}
+.card.yellow .card-face {
+    border-color: rgb(187, 201, 37);
+}
+/* ///////////// */
+
+@media (max-width: 600px) {
+    .game-container {
+      grid-template-columns: repeat(3, auto)
+    }
+  
+    .game-info-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .game-container {
+      grid-template-columns: repeat(2, auto)
+    }
+  
+    .game-info-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
