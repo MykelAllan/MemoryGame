@@ -4,7 +4,7 @@
 A classic memory game themed around Valorant, where players need to match pairs of cards with Valorant agent images. The game includes a timer, flip count, and captivating audio effects.
 
 ## Demo
-Check out the live demo: [Memory Game Demo](https://memory-game-valorant.vercel.app/)
+Check out the live demo: [Memory Game Demo](https://memorygame-mykel.vercel.app/)
 
 ## Features
 - Themed around Valorant with agent images.
