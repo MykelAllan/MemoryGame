@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="styles.css" rel="stylesheet">
+    <title>Memory Game - Valorant</title>
+    <script src='index.js'></script>
+</head>
+<body class="wrapper">
+    <h1 class="page-title"> VALORANT </h1>
+    <button id='start' class="game-start"> START </button>
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                Time <span id="time-remaining">00</span>
+            </div>
+            <div class="game-info">
+                Flips <span id="flips">0</span>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="center-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+            </div>
+            <div class="card-front card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+                <img class="card-value" src="assets/images/viper.png">
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="center-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+            </div>
+            <div class="card-front card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+                <img class="card-value" src="assets/images/viper.png">
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="center-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+            </div>
+            <div class="card-front card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+                <img class="card-value" src="assets/images/jett.png">
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="center-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+            </div>
+            <div class="card-front card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+                <img class="card-value" src="assets/images/jett.png">
+            </div>
+
+        </div>
+        <div class="card red">
+            <div class="card-back card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="center-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+            </div>
+            <div class="card-front card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+                <img class="card-value" src="assets/images/raze.png">
+            </div>
+
+        </div>
+        <div class="card red">
+            <div class="card-back card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="center-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+            </div>
+            <div class="card-front card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+                <img class="card-value" src="assets/images/raze.png">
+            </div>
+
+        </div>
+        <div class="card red">
+            <div class="card-back card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="center-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+            </div>
+            <div class="card-front card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+                <img class="card-value" src="assets/images/phoenix.png">
+            </div>
+
+        </div>
+        <div class="card red">
+            <div class="card-back card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="center-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+            </div>
+            <div class="card-front card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+                <img class="card-value" src="assets/images/phoenix.png">
+            </div>
+
+        </div>
+        <div class="card green">
+            <div class="card-back card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="center-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+            </div>
+            <div class="card-front card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+                <img class="card-value" src="assets/images/skye.png">
+            </div>
+
+        </div>
+        <div class="card green">
+            <div class="card-back card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="center-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+            </div>
+            <div class="card-front card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+                <img class="card-value" src="assets/images/skye.png">
+            </div>
+
+        </div>
+        <div class="card green">
+            <div class="card-back card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="center-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+            </div>
+            <div class="card-front card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+                <img class="card-value" src="assets/images/sova.png">
+            </div>
+
+        </div>
+        <div class="card green">
+            <div class="card-back card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="center-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+            </div>
+            <div class="card-front card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+                <img class="card-value" src="assets/images/sova.png">
+            </div>
+
+        </div>
+        <div class="card yellow">
+            <div class="card-back card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="center-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+            </div>
+            <div class="card-front card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+                <img class="card-value" src="assets/images/sage.png">
+            </div>
+
+        </div>
+        <div class="card yellow">
+            <div class="card-back card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="center-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+            </div>
+            <div class="card-front card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+                <img class="card-value" src="assets/images/sage.png">
+            </div>
+
+        </div>
+        <div class="card yellow">
+            <div class="card-back card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="center-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+            </div>
+            <div class="card-front card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+                <img class="card-value" src="assets/images/kj.png">
+            </div>
+
+        </div>
+        <div class="card yellow">
+            <div class="card-back card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="center-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+            </div>
+            <div class="card-front card-face">
+                <div class="back-box top-left-box"></div>
+                <div class="back-box top-right-box"></div>
+                <div class="back-box bottom-left-box"></div>
+                <div class="back-box bottom-right-box"></div>
+                <img class="card-value" src="assets/images/kj.png">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
