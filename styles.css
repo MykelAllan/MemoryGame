@@ -1,14 +1,9 @@
 html {
     min-height: 100vh;
-<<<<<<< HEAD
     background: url('assets/images/background.png') no-repeat;
     background-size: cover;
     background-position: center;
-=======
-    background-image: url('assets/images/background.png');
->>>>>>> 1bbf306fa67ac96bb5dccea9de0610cd8095359a
 }
-
 .wrapper {
     margin: 0;
 }
@@ -57,14 +52,9 @@ html {
 .game-info {
     font-size: 2em;
     color: white;
-}
-.game-container {
-<<<<<<< HEAD
-    
+}.game-container {
     width: 75%;
     height: 50%;
-=======
->>>>>>> 1bbf306fa67ac96bb5dccea9de0610cd8095359a
     transition: 0.3s ease-in-out;
     margin: 50px auto;
     display: grid;
@@ -72,24 +62,15 @@ html {
     grid-gap: 10px;
     justify-content: center;
     perspective: 500px;
-<<<<<<< HEAD
-    border: 2px solid black;
     
-=======
->>>>>>> 1bbf306fa67ac96bb5dccea9de0610cd8095359a
 }
 
 /* card styles */
 .card {
     position: relative;
     cursor: pointer;
-<<<<<<< HEAD
     height: 100px;
     width: 70px;
-=======
-    height: 150px;
-    width: 100px;;
->>>>>>> 1bbf306fa67ac96bb5dccea9de0610cd8095359a
 }
 
 .card-face {
@@ -272,21 +253,6 @@ html {
 @media (max-width: 600px) {
     .game-container {
       grid-template-columns: repeat(3, auto)
-    }
-  
-    .game-info-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-<<<<<<< HEAD
-  @media (max-width: 200px) {
-=======
-  @media (max-width: 400px) {
->>>>>>> 1bbf306fa67ac96bb5dccea9de0610cd8095359a
-    .game-container {
-      grid-template-columns: repeat(2, auto)
     }
   
     .game-info-container {
