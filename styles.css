@@ -159,19 +159,8 @@ html {
     position: relative;
     transition: transform 100ms ease-in-out;
     transform: scale(0.14);
-<<<<<<< HEAD
     width: 35em;
     aspect-ratio: 1;
-=======
->>>>>>> 1bbf306fa67ac96bb5dccea9de0610cd8095359a
-}
-
-.card-front:hover .card-value {
-    transform: scale(0.15);
-<<<<<<< HEAD
-
-=======
->>>>>>> 1bbf306fa67ac96bb5dccea9de0610cd8095359a
 }
 
 .card-front {
